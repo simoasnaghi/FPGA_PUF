@@ -1,0 +1,8 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"tb_enmapper_ECC_time_impl.v" \
+"../../../../../TacconiAsnaghi_PUF.srcs/sources_1/new/enmapper_ECC.v" \
+"../../../../../TacconiAsnaghi_PUF.srcs/enmapper_ECC_dut/new/tb_enmapper_ECC.v" \
+
+# Do not sort compile order
+nosort

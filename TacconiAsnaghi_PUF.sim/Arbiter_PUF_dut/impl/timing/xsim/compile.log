@@ -1,0 +1,24 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Simone/Desktop/finale/TacconiAsnaghi_PUF/TacconiAsnaghi_PUF.sim/Arbiter_PUF_dut/impl/timing/xsim/tb_Arbiter_PUF_time_impl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Arbiter_PUF
+INFO: [VRFC 10-311] analyzing module IBS_Standalone
+INFO: [VRFC 10-311] analyzing module arbiter
+INFO: [VRFC 10-311] analyzing module arbiter_0
+INFO: [VRFC 10-311] analyzing module arbiter_10
+INFO: [VRFC 10-311] analyzing module arbiter_12
+INFO: [VRFC 10-311] analyzing module arbiter_2
+INFO: [VRFC 10-311] analyzing module arbiter_4
+INFO: [VRFC 10-311] analyzing module arbiter_6
+INFO: [VRFC 10-311] analyzing module arbiter_8
+INFO: [VRFC 10-311] analyzing module enmapper_ECC
+INFO: [VRFC 10-311] analyzing module singlebitAPUF
+INFO: [VRFC 10-311] analyzing module singlebitAPUF_1
+INFO: [VRFC 10-311] analyzing module singlebitAPUF_11
+INFO: [VRFC 10-311] analyzing module singlebitAPUF_13
+INFO: [VRFC 10-311] analyzing module singlebitAPUF_3
+INFO: [VRFC 10-311] analyzing module singlebitAPUF_5
+INFO: [VRFC 10-311] analyzing module singlebitAPUF_7
+INFO: [VRFC 10-311] analyzing module singlebitAPUF_9
+INFO: [VRFC 10-311] analyzing module starter
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Simone/Desktop/finale/TacconiAsnaghi_PUF/TacconiAsnaghi_PUF.srcs/Arbiter_PUF_dut/new/tb_Arbiter_PUF.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_Arbiter_PUF

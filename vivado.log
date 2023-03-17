@@ -1,0 +1,506 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Wed Feb  9 00:07:32 2022
+# Process ID: 8896
+# Current directory: C:/Users/Simone/Desktop/finale/TacconiAsnaghi_PUF
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent8972 C:\Users\Simone\Desktop\finale\TacconiAsnaghi_PUF\TacconiAsnaghi_PUF.xpr
+# Log file: C:/Users/Simone/Desktop/finale/TacconiAsnaghi_PUF/vivado.log
+# Journal file: C:/Users/Simone/Desktop/finale/TacconiAsnaghi_PUF\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/Simone/Desktop/finale/TacconiAsnaghi_PUF/TacconiAsnaghi_PUF.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2020.2/data/ip'.
+open_project: Time (s): cpu = 00:00:51 ; elapsed = 00:00:21 . Memory (MB): peak = 1003.340 ; gain = 0.000
+launch_simulation -simset [get_filesets enmapper_ECC_dut ] -mode post-implementation -type timing
+Command: launch_simulation -simset enmapper_ECC_dut -mode post-implementation -type timing
+INFO: [Vivado 12-5682] Launching post-implementation timing simulation in 'C:/Users/Simone/Desktop/finale/TacconiAsnaghi_PUF/TacconiAsnaghi_PUF.sim/enmapper_ECC_dut/impl/timing/xsim'
+INFO: [SIM-utils-51] Simulation object is 'enmapper_ECC_dut'
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 1044.109 ; gain = 0.000
+INFO: [Project 1-479] Netlist was created with Vivado 2020.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.102 . Memory (MB): peak = 1711.477 ; gain = 0.000
+Restored from archive | CPU: 0.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.103 . Memory (MB): peak = 1711.477 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1711.477 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+open_run: Time (s): cpu = 00:01:13 ; elapsed = 00:00:49 . Memory (MB): peak = 1812.117 ; gain = 808.777
+INFO: [SIM-utils-31] Writing simulation netlist file for design 'impl_1'...
+INFO: [SIM-utils-32] write_verilog -mode timesim -nolib -sdf_anno true -force -file "C:/Users/Simone/Desktop/finale/TacconiAsnaghi_PUF/TacconiAsnaghi_PUF.sim/enmapper_ECC_dut/impl/timing/xsim/tb_enmapper_ECC_time_impl.v"
+INFO: [SIM-utils-34] Writing SDF file...
+INFO: [SIM-utils-35] write_sdf -mode timesim -process_corner slow -force -file "C:/Users/Simone/Desktop/finale/TacconiAsnaghi_PUF/TacconiAsnaghi_PUF.sim/enmapper_ECC_dut/impl/timing/xsim/tb_enmapper_ECC_time_impl.sdf"
+INFO: [SIM-utils-36] Netlist generated:C:/Users/Simone/Desktop/finale/TacconiAsnaghi_PUF/TacconiAsnaghi_PUF.sim/enmapper_ECC_dut/impl/timing/xsim/tb_enmapper_ECC_time_impl.v
+INFO: [SIM-utils-37] SDF generated:C:/Users/Simone/Desktop/finale/TacconiAsnaghi_PUF/TacconiAsnaghi_PUF.sim/enmapper_ECC_dut/impl/timing/xsim/tb_enmapper_ECC_time_impl.sdf
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'C:/Xilinx/Vivado/2020.2/data/xsim/xsim.ini' copied to run dir:'C:/Users/Simone/Desktop/finale/TacconiAsnaghi_PUF/TacconiAsnaghi_PUF.sim/enmapper_ECC_dut/impl/timing/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_enmapper_ECC' in fileset 'enmapper_ECC_dut'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Simone/Desktop/finale/TacconiAsnaghi_PUF/TacconiAsnaghi_PUF.sim/enmapper_ECC_dut/impl/timing/xsim'
+"xvlog --incr --relax -prj tb_enmapper_ECC_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Simone/Desktop/finale/TacconiAsnaghi_PUF/TacconiAsnaghi_PUF.sim/enmapper_ECC_dut/impl/timing/xsim/tb_enmapper_ECC_time_impl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Arbiter_PUF
+INFO: [VRFC 10-311] analyzing module IBS_Standalone
+INFO: [VRFC 10-311] analyzing module arbiter
+INFO: [VRFC 10-311] analyzing module arbiter_0
+INFO: [VRFC 10-311] analyzing module arbiter_10
+INFO: [VRFC 10-311] analyzing module arbiter_12
+INFO: [VRFC 10-311] analyzing module arbiter_2
+INFO: [VRFC 10-311] analyzing module arbiter_4
+INFO: [VRFC 10-311] analyzing module arbiter_6
+INFO: [VRFC 10-311] analyzing module arbiter_8
+INFO: [VRFC 10-311] analyzing module enmapper_ECC
+INFO: [VRFC 10-311] analyzing module singlebitAPUF
+INFO: [VRFC 10-311] analyzing module singlebitAPUF_1
+INFO: [VRFC 10-311] analyzing module singlebitAPUF_11
+INFO: [VRFC 10-311] analyzing module singlebitAPUF_13
+INFO: [VRFC 10-311] analyzing module singlebitAPUF_3
+INFO: [VRFC 10-311] analyzing module singlebitAPUF_5
+INFO: [VRFC 10-311] analyzing module singlebitAPUF_7
+INFO: [VRFC 10-311] analyzing module singlebitAPUF_9
+INFO: [VRFC 10-311] analyzing module starter
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Simone/Desktop/finale/TacconiAsnaghi_PUF/TacconiAsnaghi_PUF.srcs/sources_1/new/enmapper_ECC.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module enmapper_ECC
+WARNING: [VRFC 10-3609] overwriting previous definition of module 'enmapper_ECC' [C:/Users/Simone/Desktop/finale/TacconiAsnaghi_PUF/TacconiAsnaghi_PUF.srcs/sources_1/new/enmapper_ECC.v:16]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Simone/Desktop/finale/TacconiAsnaghi_PUF/TacconiAsnaghi_PUF.srcs/enmapper_ECC_dut/new/tb_enmapper_ECC.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_enmapper_ECC
+run_program: Time (s): cpu = 00:00:02 ; elapsed = 00:00:05 . Memory (MB): peak = 1835.172 ; gain = 0.000
+INFO: [USF-XSim-69] 'compile' step finished in '5' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Simone/Desktop/finale/TacconiAsnaghi_PUF/TacconiAsnaghi_PUF.sim/enmapper_ECC_dut/impl/timing/xsim'
+"xelab -wto 19a02e536efc4fd8a4c4e73bf0195af8 --incr --debug typical --relax --mt 2 --maxdelay -L xil_defaultlib -L simprims_ver -L secureip --snapshot tb_enmapper_ECC_time_impl -transport_int_delays -pulse_r 0 -pulse_int_r 0 -pulse_e 0 -pulse_int_e 0 xil_defaultlib.tb_enmapper_ECC xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto 19a02e536efc4fd8a4c4e73bf0195af8 --incr --debug typical --relax --mt 2 --maxdelay -L xil_defaultlib -L simprims_ver -L secureip --snapshot tb_enmapper_ECC_time_impl -transport_int_delays -pulse_r 0 -pulse_int_r 0 -pulse_e 0 -pulse_int_e 0 xil_defaultlib.tb_enmapper_ECC xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.enmapper_ECC(RESPONSE_BITS=8,ROW...
+Compiling module xil_defaultlib.tb_enmapper_ECC
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_enmapper_ECC_time_impl
+run_program: Time (s): cpu = 00:00:02 ; elapsed = 00:00:06 . Memory (MB): peak = 1835.172 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '7' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Simone/Desktop/finale/TacconiAsnaghi_PUF/TacconiAsnaghi_PUF.sim/enmapper_ECC_dut/impl/timing/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_enmapper_ECC_time_impl -key {Post-Implementation:enmapper_ECC_dut:Timing:tb_enmapper_ECC} -tclbatch {tb_enmapper_ECC.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+source tb_enmapper_ECC.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+xsim: Time (s): cpu = 00:00:39 ; elapsed = 00:00:16 . Memory (MB): peak = 1841.879 ; gain = 6.707
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_enmapper_ECC_time_impl' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:02:21 ; elapsed = 00:01:28 . Memory (MB): peak = 1841.879 ; gain = 838.539
+update_compile_order -fileset sources_1
+save_wave_config {C:/Users/Simone/Desktop/finale/TacconiAsnaghi_PUF/tb_enmapper_ECC_time_impl.wcfg}
+add_files -fileset enmapper_ECC_dut -norecurse C:/Users/Simone/Desktop/finale/TacconiAsnaghi_PUF/tb_enmapper_ECC_time_impl.wcfg
+set_property xsim.view C:/Users/Simone/Desktop/finale/TacconiAsnaghi_PUF/tb_enmapper_ECC_time_impl.wcfg [get_filesets enmapper_ECC_dut]
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim: Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 1847.633 ; gain = 5.754
+current_fileset -simset [ get_filesets IBS_dut ]
+launch_simulation -simset [get_filesets IBS_dut ] -mode post-implementation -type timing
+Command: launch_simulation -simset IBS_dut -mode post-implementation -type timing
+INFO: [Vivado 12-5682] Launching post-implementation timing simulation in 'C:/Users/Simone/Desktop/finale/TacconiAsnaghi_PUF/TacconiAsnaghi_PUF.sim/IBS_dut/impl/timing/xsim'
+INFO: [SIM-utils-51] Simulation object is 'IBS_dut'
+INFO: [SIM-utils-31] Writing simulation netlist file for design 'impl_1'...
+INFO: [SIM-utils-32] write_verilog -mode timesim -nolib -sdf_anno true -force -file "C:/Users/Simone/Desktop/finale/TacconiAsnaghi_PUF/TacconiAsnaghi_PUF.sim/IBS_dut/impl/timing/xsim/tb_IBS_time_impl.v"
+INFO: [SIM-utils-34] Writing SDF file...
+INFO: [SIM-utils-35] write_sdf -mode timesim -process_corner slow -force -file "C:/Users/Simone/Desktop/finale/TacconiAsnaghi_PUF/TacconiAsnaghi_PUF.sim/IBS_dut/impl/timing/xsim/tb_IBS_time_impl.sdf"
+INFO: [SIM-utils-36] Netlist generated:C:/Users/Simone/Desktop/finale/TacconiAsnaghi_PUF/TacconiAsnaghi_PUF.sim/IBS_dut/impl/timing/xsim/tb_IBS_time_impl.v
+INFO: [SIM-utils-37] SDF generated:C:/Users/Simone/Desktop/finale/TacconiAsnaghi_PUF/TacconiAsnaghi_PUF.sim/IBS_dut/impl/timing/xsim/tb_IBS_time_impl.sdf
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'C:/Xilinx/Vivado/2020.2/data/xsim/xsim.ini' copied to run dir:'C:/Users/Simone/Desktop/finale/TacconiAsnaghi_PUF/TacconiAsnaghi_PUF.sim/IBS_dut/impl/timing/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_IBS' in fileset 'IBS_dut'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Simone/Desktop/finale/TacconiAsnaghi_PUF/TacconiAsnaghi_PUF.sim/IBS_dut/impl/timing/xsim'
+"xvlog --incr --relax -prj tb_IBS_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Simone/Desktop/finale/TacconiAsnaghi_PUF/TacconiAsnaghi_PUF.sim/IBS_dut/impl/timing/xsim/tb_IBS_time_impl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Arbiter_PUF
+INFO: [VRFC 10-311] analyzing module IBS_Standalone
+INFO: [VRFC 10-311] analyzing module arbiter
+INFO: [VRFC 10-311] analyzing module arbiter_0
+INFO: [VRFC 10-311] analyzing module arbiter_10
+INFO: [VRFC 10-311] analyzing module arbiter_12
+INFO: [VRFC 10-311] analyzing module arbiter_2
+INFO: [VRFC 10-311] analyzing module arbiter_4
+INFO: [VRFC 10-311] analyzing module arbiter_6
+INFO: [VRFC 10-311] analyzing module arbiter_8
+INFO: [VRFC 10-311] analyzing module enmapper_ECC
+INFO: [VRFC 10-311] analyzing module singlebitAPUF
+INFO: [VRFC 10-311] analyzing module singlebitAPUF_1
+INFO: [VRFC 10-311] analyzing module singlebitAPUF_11
+INFO: [VRFC 10-311] analyzing module singlebitAPUF_13
+INFO: [VRFC 10-311] analyzing module singlebitAPUF_3
+INFO: [VRFC 10-311] analyzing module singlebitAPUF_5
+INFO: [VRFC 10-311] analyzing module singlebitAPUF_7
+INFO: [VRFC 10-311] analyzing module singlebitAPUF_9
+INFO: [VRFC 10-311] analyzing module starter
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Simone/Desktop/finale/TacconiAsnaghi_PUF/TacconiAsnaghi_PUF.srcs/sources_1/new/IBS_Standalone.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module IBS_Standalone
+WARNING: [VRFC 10-3609] overwriting previous definition of module 'IBS_Standalone' [C:/Users/Simone/Desktop/finale/TacconiAsnaghi_PUF/TacconiAsnaghi_PUF.srcs/sources_1/new/IBS_Standalone.v:16]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Simone/Desktop/finale/TacconiAsnaghi_PUF/TacconiAsnaghi_PUF.srcs/sources_1/new/controller_ECC.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module controller_ECC
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Simone/Desktop/finale/TacconiAsnaghi_PUF/TacconiAsnaghi_PUF.srcs/sources_1/new/demapper_ECC.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module demapper_ECC
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Simone/Desktop/finale/TacconiAsnaghi_PUF/TacconiAsnaghi_PUF.srcs/sources_1/new/enmapper_ECC.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module enmapper_ECC
+WARNING: [VRFC 10-3609] overwriting previous definition of module 'enmapper_ECC' [C:/Users/Simone/Desktop/finale/TacconiAsnaghi_PUF/TacconiAsnaghi_PUF.srcs/sources_1/new/enmapper_ECC.v:16]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Simone/Desktop/finale/TacconiAsnaghi_PUF/TacconiAsnaghi_PUF.srcs/IBS_dut/new/tb_IBS.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_IBS
+run_program: Time (s): cpu = 00:00:02 ; elapsed = 00:00:06 . Memory (MB): peak = 1855.711 ; gain = 0.000
+INFO: [USF-XSim-69] 'compile' step finished in '6' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Simone/Desktop/finale/TacconiAsnaghi_PUF/TacconiAsnaghi_PUF.sim/IBS_dut/impl/timing/xsim'
+"xelab -wto 19a02e536efc4fd8a4c4e73bf0195af8 --incr --debug typical --relax --mt 2 --maxdelay -L xil_defaultlib -L simprims_ver -L secureip --snapshot tb_IBS_time_impl -transport_int_delays -pulse_r 0 -pulse_int_r 0 -pulse_e 0 -pulse_int_e 0 xil_defaultlib.tb_IBS xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto 19a02e536efc4fd8a4c4e73bf0195af8 --incr --debug typical --relax --mt 2 --maxdelay -L xil_defaultlib -L simprims_ver -L secureip --snapshot tb_IBS_time_impl -transport_int_delays -pulse_r 0 -pulse_int_r 0 -pulse_e 0 -pulse_int_e 0 xil_defaultlib.tb_IBS xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.enmapper_ECC(RESPONSE_BITS=8,ROW...
+Compiling module xil_defaultlib.demapper_ECC
+Compiling module xil_defaultlib.controller_ECC(RESPONSE_BITS=8,I...
+Compiling module xil_defaultlib.IBS_Standalone
+Compiling module xil_defaultlib.tb_IBS
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_IBS_time_impl
+
+****** Webtalk v2020.2 (64-bit)
+  **** SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+  **** IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/Simone/Desktop/finale/TacconiAsnaghi_PUF/TacconiAsnaghi_PUF.sim/IBS_dut/impl/timing/xsim/xsim.dir/tb_IBS_time_impl/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-186] 'C:/Users/Simone/Desktop/finale/TacconiAsnaghi_PUF/TacconiAsnaghi_PUF.sim/IBS_dut/impl/timing/xsim/xsim.dir/tb_IBS_time_impl/webtalk/usage_statistics_ext_xsim.xml' has been successfully sent to Xilinx on Wed Feb  9 00:13:05 2022. For additional details about this file, please refer to the WebTalk help file at C:/Xilinx/Vivado/2020.2/doc/webtalk_introduction.html.
+webtalk_transmit: Time (s): cpu = 00:00:00 ; elapsed = 00:00:08 . Memory (MB): peak = 116.371 ; gain = 23.477
+INFO: [Common 17-206] Exiting Webtalk at Wed Feb  9 00:13:05 2022...
+run_program: Time (s): cpu = 00:00:03 ; elapsed = 00:00:22 . Memory (MB): peak = 1855.711 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '23' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Simone/Desktop/finale/TacconiAsnaghi_PUF/TacconiAsnaghi_PUF.sim/IBS_dut/impl/timing/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_IBS_time_impl -key {Post-Implementation:IBS_dut:Timing:tb_IBS} -tclbatch {tb_IBS.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+source tb_IBS.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+xsim: Time (s): cpu = 00:00:17 ; elapsed = 00:00:11 . Memory (MB): peak = 1861.113 ; gain = 5.402
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_IBS_time_impl' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:27 ; elapsed = 00:00:43 . Memory (MB): peak = 1861.113 ; gain = 13.480
+save_wave_config {C:/Users/Simone/Desktop/finale/TacconiAsnaghi_PUF/tb_IBS_time_impl.wcfg}
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim: Time (s): cpu = 00:00:13 ; elapsed = 00:00:19 . Memory (MB): peak = 1862.438 ; gain = 0.000
+current_fileset -simset [ get_filesets controller_ECC_dut ]
+launch_simulation -simset [get_filesets controller_ECC_dut ] -mode post-implementation -type timing
+Command: launch_simulation -simset controller_ECC_dut -mode post-implementation -type timing
+INFO: [Vivado 12-5682] Launching post-implementation timing simulation in 'C:/Users/Simone/Desktop/finale/TacconiAsnaghi_PUF/TacconiAsnaghi_PUF.sim/controller_ECC_dut/impl/timing/xsim'
+INFO: [SIM-utils-51] Simulation object is 'controller_ECC_dut'
+INFO: [SIM-utils-31] Writing simulation netlist file for design 'impl_1'...
+INFO: [SIM-utils-32] write_verilog -mode timesim -nolib -sdf_anno true -force -file "C:/Users/Simone/Desktop/finale/TacconiAsnaghi_PUF/TacconiAsnaghi_PUF.sim/controller_ECC_dut/impl/timing/xsim/tb_controller_ECC_time_impl.v"
+INFO: [SIM-utils-34] Writing SDF file...
+INFO: [SIM-utils-35] write_sdf -mode timesim -process_corner slow -force -file "C:/Users/Simone/Desktop/finale/TacconiAsnaghi_PUF/TacconiAsnaghi_PUF.sim/controller_ECC_dut/impl/timing/xsim/tb_controller_ECC_time_impl.sdf"
+INFO: [SIM-utils-36] Netlist generated:C:/Users/Simone/Desktop/finale/TacconiAsnaghi_PUF/TacconiAsnaghi_PUF.sim/controller_ECC_dut/impl/timing/xsim/tb_controller_ECC_time_impl.v
+INFO: [SIM-utils-37] SDF generated:C:/Users/Simone/Desktop/finale/TacconiAsnaghi_PUF/TacconiAsnaghi_PUF.sim/controller_ECC_dut/impl/timing/xsim/tb_controller_ECC_time_impl.sdf
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'C:/Xilinx/Vivado/2020.2/data/xsim/xsim.ini' copied to run dir:'C:/Users/Simone/Desktop/finale/TacconiAsnaghi_PUF/TacconiAsnaghi_PUF.sim/controller_ECC_dut/impl/timing/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_controller_ECC' in fileset 'controller_ECC_dut'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Simone/Desktop/finale/TacconiAsnaghi_PUF/TacconiAsnaghi_PUF.sim/controller_ECC_dut/impl/timing/xsim'
+"xvlog --incr --relax -prj tb_controller_ECC_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Simone/Desktop/finale/TacconiAsnaghi_PUF/TacconiAsnaghi_PUF.sim/controller_ECC_dut/impl/timing/xsim/tb_controller_ECC_time_impl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Arbiter_PUF
+INFO: [VRFC 10-311] analyzing module IBS_Standalone
+INFO: [VRFC 10-311] analyzing module arbiter
+INFO: [VRFC 10-311] analyzing module arbiter_0
+INFO: [VRFC 10-311] analyzing module arbiter_10
+INFO: [VRFC 10-311] analyzing module arbiter_12
+INFO: [VRFC 10-311] analyzing module arbiter_2
+INFO: [VRFC 10-311] analyzing module arbiter_4
+INFO: [VRFC 10-311] analyzing module arbiter_6
+INFO: [VRFC 10-311] analyzing module arbiter_8
+INFO: [VRFC 10-311] analyzing module enmapper_ECC
+INFO: [VRFC 10-311] analyzing module singlebitAPUF
+INFO: [VRFC 10-311] analyzing module singlebitAPUF_1
+INFO: [VRFC 10-311] analyzing module singlebitAPUF_11
+INFO: [VRFC 10-311] analyzing module singlebitAPUF_13
+INFO: [VRFC 10-311] analyzing module singlebitAPUF_3
+INFO: [VRFC 10-311] analyzing module singlebitAPUF_5
+INFO: [VRFC 10-311] analyzing module singlebitAPUF_7
+INFO: [VRFC 10-311] analyzing module singlebitAPUF_9
+INFO: [VRFC 10-311] analyzing module starter
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Simone/Desktop/finale/TacconiAsnaghi_PUF/TacconiAsnaghi_PUF.srcs/sources_1/new/controller_ECC.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module controller_ECC
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Simone/Desktop/finale/TacconiAsnaghi_PUF/TacconiAsnaghi_PUF.srcs/controller_ECC_dut/new/tb_controller_ECC.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_controller_ECC
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 1870.691 ; gain = 0.000
+INFO: [USF-XSim-69] 'compile' step finished in '6' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Simone/Desktop/finale/TacconiAsnaghi_PUF/TacconiAsnaghi_PUF.sim/controller_ECC_dut/impl/timing/xsim'
+"xelab -wto 19a02e536efc4fd8a4c4e73bf0195af8 --incr --debug typical --relax --mt 2 --maxdelay -L xil_defaultlib -L simprims_ver -L secureip --snapshot tb_controller_ECC_time_impl -transport_int_delays -pulse_r 0 -pulse_int_r 0 -pulse_e 0 -pulse_int_e 0 xil_defaultlib.tb_controller_ECC xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto 19a02e536efc4fd8a4c4e73bf0195af8 --incr --debug typical --relax --mt 2 --maxdelay -L xil_defaultlib -L simprims_ver -L secureip --snapshot tb_controller_ECC_time_impl -transport_int_delays -pulse_r 0 -pulse_int_r 0 -pulse_e 0 -pulse_int_e 0 xil_defaultlib.tb_controller_ECC xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.controller_ECC(RESPONSE_BITS=8,I...
+Compiling module xil_defaultlib.tb_controller_ECC
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_controller_ECC_time_impl
+
+****** Webtalk v2020.2 (64-bit)
+  **** SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+  **** IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/Simone/Desktop/finale/TacconiAsnaghi_PUF/TacconiAsnaghi_PUF.sim/controller_ECC_dut/impl/timing/xsim/xsim.dir/tb_controller_ECC_time_impl/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-186] 'C:/Users/Simone/Desktop/finale/TacconiAsnaghi_PUF/TacconiAsnaghi_PUF.sim/controller_ECC_dut/impl/timing/xsim/xsim.dir/tb_controller_ECC_time_impl/webtalk/usage_statistics_ext_xsim.xml' has been successfully sent to Xilinx on Wed Feb  9 00:14:56 2022. For additional details about this file, please refer to the WebTalk help file at C:/Xilinx/Vivado/2020.2/doc/webtalk_introduction.html.
+webtalk_transmit: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 116.484 ; gain = 23.602
+INFO: [Common 17-206] Exiting Webtalk at Wed Feb  9 00:14:56 2022...
+run_program: Time (s): cpu = 00:00:04 ; elapsed = 00:00:21 . Memory (MB): peak = 1870.691 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '21' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Simone/Desktop/finale/TacconiAsnaghi_PUF/TacconiAsnaghi_PUF.sim/controller_ECC_dut/impl/timing/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_controller_ECC_time_impl -key {Post-Implementation:controller_ECC_dut:Timing:tb_controller_ECC} -tclbatch {tb_controller_ECC.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+source tb_controller_ECC.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+xsim: Time (s): cpu = 00:00:14 ; elapsed = 00:00:09 . Memory (MB): peak = 1871.996 ; gain = 1.305
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_controller_ECC_time_impl' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:25 ; elapsed = 00:00:40 . Memory (MB): peak = 1871.996 ; gain = 9.559
+save_wave_config {C:/Users/Simone/Desktop/finale/TacconiAsnaghi_PUF/tb_controller_ECC_time_impl.wcfg}
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim: Time (s): cpu = 00:00:08 ; elapsed = 00:00:16 . Memory (MB): peak = 1873.043 ; gain = 0.000
+current_fileset -simset [ get_filesets Arbiter_PUF_dut ]
+launch_simulation -simset [get_filesets Arbiter_PUF_dut ] -mode post-implementation -type timing
+Command: launch_simulation -simset Arbiter_PUF_dut -mode post-implementation -type timing
+INFO: [Vivado 12-5682] Launching post-implementation timing simulation in 'C:/Users/Simone/Desktop/finale/TacconiAsnaghi_PUF/TacconiAsnaghi_PUF.sim/Arbiter_PUF_dut/impl/timing/xsim'
+INFO: [SIM-utils-51] Simulation object is 'Arbiter_PUF_dut'
+INFO: [SIM-utils-31] Writing simulation netlist file for design 'impl_1'...
+INFO: [SIM-utils-32] write_verilog -mode timesim -nolib -sdf_anno true -force -file "C:/Users/Simone/Desktop/finale/TacconiAsnaghi_PUF/TacconiAsnaghi_PUF.sim/Arbiter_PUF_dut/impl/timing/xsim/tb_Arbiter_PUF_time_impl.v"
+INFO: [SIM-utils-34] Writing SDF file...
+INFO: [SIM-utils-35] write_sdf -mode timesim -process_corner slow -force -file "C:/Users/Simone/Desktop/finale/TacconiAsnaghi_PUF/TacconiAsnaghi_PUF.sim/Arbiter_PUF_dut/impl/timing/xsim/tb_Arbiter_PUF_time_impl.sdf"
+INFO: [SIM-utils-36] Netlist generated:C:/Users/Simone/Desktop/finale/TacconiAsnaghi_PUF/TacconiAsnaghi_PUF.sim/Arbiter_PUF_dut/impl/timing/xsim/tb_Arbiter_PUF_time_impl.v
+INFO: [SIM-utils-37] SDF generated:C:/Users/Simone/Desktop/finale/TacconiAsnaghi_PUF/TacconiAsnaghi_PUF.sim/Arbiter_PUF_dut/impl/timing/xsim/tb_Arbiter_PUF_time_impl.sdf
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'C:/Xilinx/Vivado/2020.2/data/xsim/xsim.ini' copied to run dir:'C:/Users/Simone/Desktop/finale/TacconiAsnaghi_PUF/TacconiAsnaghi_PUF.sim/Arbiter_PUF_dut/impl/timing/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_Arbiter_PUF' in fileset 'Arbiter_PUF_dut'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Simone/Desktop/finale/TacconiAsnaghi_PUF/TacconiAsnaghi_PUF.sim/Arbiter_PUF_dut/impl/timing/xsim'
+"xvlog --incr --relax -prj tb_Arbiter_PUF_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Simone/Desktop/finale/TacconiAsnaghi_PUF/TacconiAsnaghi_PUF.sim/Arbiter_PUF_dut/impl/timing/xsim/tb_Arbiter_PUF_time_impl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Arbiter_PUF
+INFO: [VRFC 10-311] analyzing module IBS_Standalone
+INFO: [VRFC 10-311] analyzing module arbiter
+INFO: [VRFC 10-311] analyzing module arbiter_0
+INFO: [VRFC 10-311] analyzing module arbiter_10
+INFO: [VRFC 10-311] analyzing module arbiter_12
+INFO: [VRFC 10-311] analyzing module arbiter_2
+INFO: [VRFC 10-311] analyzing module arbiter_4
+INFO: [VRFC 10-311] analyzing module arbiter_6
+INFO: [VRFC 10-311] analyzing module arbiter_8
+INFO: [VRFC 10-311] analyzing module enmapper_ECC
+INFO: [VRFC 10-311] analyzing module singlebitAPUF
+INFO: [VRFC 10-311] analyzing module singlebitAPUF_1
+INFO: [VRFC 10-311] analyzing module singlebitAPUF_11
+INFO: [VRFC 10-311] analyzing module singlebitAPUF_13
+INFO: [VRFC 10-311] analyzing module singlebitAPUF_3
+INFO: [VRFC 10-311] analyzing module singlebitAPUF_5
+INFO: [VRFC 10-311] analyzing module singlebitAPUF_7
+INFO: [VRFC 10-311] analyzing module singlebitAPUF_9
+INFO: [VRFC 10-311] analyzing module starter
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Simone/Desktop/finale/TacconiAsnaghi_PUF/TacconiAsnaghi_PUF.srcs/Arbiter_PUF_dut/new/tb_Arbiter_PUF.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_Arbiter_PUF
+INFO: [USF-XSim-69] 'compile' step finished in '5' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Simone/Desktop/finale/TacconiAsnaghi_PUF/TacconiAsnaghi_PUF.sim/Arbiter_PUF_dut/impl/timing/xsim'
+"xelab -wto 19a02e536efc4fd8a4c4e73bf0195af8 --incr --debug typical --relax --mt 2 --maxdelay -L xil_defaultlib -L simprims_ver -L secureip --snapshot tb_Arbiter_PUF_time_impl -transport_int_delays -pulse_r 0 -pulse_int_r 0 -pulse_e 0 -pulse_int_e 0 xil_defaultlib.tb_Arbiter_PUF xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto 19a02e536efc4fd8a4c4e73bf0195af8 --incr --debug typical --relax --mt 2 --maxdelay -L xil_defaultlib -L simprims_ver -L secureip --snapshot tb_Arbiter_PUF_time_impl -transport_int_delays -pulse_r 0 -pulse_int_r 0 -pulse_e 0 -pulse_int_e 0 xil_defaultlib.tb_Arbiter_PUF xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+INFO: [XSIM 43-3451] SDF backannotation process started with SDF file "tb_Arbiter_PUF_time_impl.sdf", for root module "tb_Arbiter_PUF/Arbiter_PUF_inst".
+INFO: [XSIM 43-3452] SDF backannotation was successful for SDF file "tb_Arbiter_PUF_time_impl.sdf", for root module "tb_Arbiter_PUF/Arbiter_PUF_inst".
+Time Resolution for simulation is 1ps
+Compiling module simprims_ver.x_lut2_mux4
+Compiling module simprims_ver.LUT2
+Compiling module simprims_ver.FDRE_default
+Compiling module xil_defaultlib.enmapper_ECC
+Compiling module simprims_ver.LUT4(INIT=16'b1100111111001010)
+Compiling module simprims_ver.x_lut1_mux2
+Compiling module simprims_ver.LUT1(INIT=2'b01)
+Compiling module xil_defaultlib.IBS_Standalone
+Compiling module simprims_ver.IBUF
+Compiling module simprims_ver.BUFG
+Compiling module simprims_ver.OBUF
+Compiling module simprims_ver.FDSE_default
+Compiling module xil_defaultlib.arbiter
+Compiling module simprims_ver.x_lut3_mux8
+Compiling module simprims_ver.LUT3
+Compiling module xil_defaultlib.singlebitAPUF
+Compiling module xil_defaultlib.arbiter_0
+Compiling module xil_defaultlib.singlebitAPUF_1
+Compiling module xil_defaultlib.arbiter_2
+Compiling module xil_defaultlib.singlebitAPUF_3
+Compiling module xil_defaultlib.arbiter_4
+Compiling module xil_defaultlib.singlebitAPUF_5
+Compiling module xil_defaultlib.arbiter_6
+Compiling module xil_defaultlib.singlebitAPUF_7
+Compiling module xil_defaultlib.arbiter_8
+Compiling module xil_defaultlib.singlebitAPUF_9
+Compiling module xil_defaultlib.arbiter_10
+Compiling module xil_defaultlib.singlebitAPUF_11
+Compiling module xil_defaultlib.arbiter_12
+Compiling module xil_defaultlib.singlebitAPUF_13
+Compiling module xil_defaultlib.starter
+Compiling module xil_defaultlib.Arbiter_PUF
+Compiling module xil_defaultlib.tb_Arbiter_PUF
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_Arbiter_PUF_time_impl
+
+****** Webtalk v2020.2 (64-bit)
+  **** SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+  **** IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/Simone/Desktop/finale/TacconiAsnaghi_PUF/TacconiAsnaghi_PUF.sim/Arbiter_PUF_dut/impl/timing/xsim/xsim.dir/tb_Arbiter_PUF_time_impl/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-186] 'C:/Users/Simone/Desktop/finale/TacconiAsnaghi_PUF/TacconiAsnaghi_PUF.sim/Arbiter_PUF_dut/impl/timing/xsim/xsim.dir/tb_Arbiter_PUF_time_impl/webtalk/usage_statistics_ext_xsim.xml' has been successfully sent to Xilinx on Wed Feb  9 00:17:23 2022. For additional details about this file, please refer to the WebTalk help file at C:/Xilinx/Vivado/2020.2/doc/webtalk_introduction.html.
+webtalk_transmit: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 116.414 ; gain = 23.184
+INFO: [Common 17-206] Exiting Webtalk at Wed Feb  9 00:17:23 2022...
+run_program: Time (s): cpu = 00:00:03 ; elapsed = 00:00:37 . Memory (MB): peak = 1881.461 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '37' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Simone/Desktop/finale/TacconiAsnaghi_PUF/TacconiAsnaghi_PUF.sim/Arbiter_PUF_dut/impl/timing/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_Arbiter_PUF_time_impl -key {Post-Implementation:Arbiter_PUF_dut:Timing:tb_Arbiter_PUF} -tclbatch {tb_Arbiter_PUF.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+source tb_Arbiter_PUF.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+xsim: Time (s): cpu = 00:00:15 ; elapsed = 00:00:10 . Memory (MB): peak = 1881.859 ; gain = 0.398
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_Arbiter_PUF_time_impl' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:23 ; elapsed = 00:00:55 . Memory (MB): peak = 1881.859 ; gain = 8.816
+save_wave_config {C:/Users/Simone/Desktop/finale/TacconiAsnaghi_PUF/tb_Arbiter_PUF_time_impl.wcfg}
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim: Time (s): cpu = 00:00:11 ; elapsed = 00:00:17 . Memory (MB): peak = 1883.758 ; gain = 0.000
+archive_project C:/Users/Simone/Desktop/finale/TacconiAsnaghi_PUF.xpr.zip -temp_dir C:/Users/Simone/Desktop/finale/TacconiAsnaghi_PUF/.Xil/Vivado-8896-DESKTOP-UV9HJ0O -force -include_local_ip_cache
+INFO: [Coretcl 2-137] starting archive...
+INFO: [Coretcl 2-1499] Saving project copy to temporary location 'C:/Users/Simone/Desktop/finale/TacconiAsnaghi_PUF/.Xil/Vivado-8896-DESKTOP-UV9HJ0O' for archiving project
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2020.2/data/ip'.
+INFO: [Coretcl 2-1211] Creating project copy for archival...
+INFO: [ProjectBase 1-495] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience any problem with archiving the project, please consider setting environment variable $TEMP to a shorter path.
+Current project path is 'C:/Users/Simone/Desktop/finale/TacconiAsnaghi_PUF/.Xil/Vivado-8896-DESKTOP-UV9HJ0O/PrjAr/_X_'.
+INFO: [IP_Flow 19-1976] HDL Parser: Replacing 'INDEX_BITS' by 8 for port or parameter 'response_number'
+INFO: [IP_Flow 19-5107] Inferred bus interface 'reset' of definition 'xilinx.com:signal:reset:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'clk' of definition 'xilinx.com:signal:clock:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-4728] Bus Interface 'clk': Added interface parameter 'ASSOCIATED_RESET' with value 'reset'.
+WARNING: [IP_Flow 19-5661] Bus Interface 'clk' does not have any bus interfaces associated with it.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [Coretcl 2-1213] Including run results for 'synth_1'
+INFO: [Coretcl 2-1213] Including run results for 'impl_1'
+INFO: [Coretcl 2-1212] Importing remotely added design sources and verilog include files (if any)...
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: '1bit_APUF_dut'
+INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'Arbiter_PUF_dut'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'Arbiter_PUF_dut'
+INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'IBS_dut'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'IBS_dut'
+INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'constrs_1'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'constrs_1'
+INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'controller_ECC_dut'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'controller_ECC_dut'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'demapper_ECC_dut'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'enmapper_ECC_dut'
+INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'sources_1'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'sources_1'

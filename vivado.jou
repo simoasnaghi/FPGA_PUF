@@ -1,0 +1,36 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Wed Feb  9 00:07:32 2022
+# Process ID: 8896
+# Current directory: C:/Users/Simone/Desktop/finale/TacconiAsnaghi_PUF
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent8972 C:\Users\Simone\Desktop\finale\TacconiAsnaghi_PUF\TacconiAsnaghi_PUF.xpr
+# Log file: C:/Users/Simone/Desktop/finale/TacconiAsnaghi_PUF/vivado.log
+# Journal file: C:/Users/Simone/Desktop/finale/TacconiAsnaghi_PUF\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/Simone/Desktop/finale/TacconiAsnaghi_PUF/TacconiAsnaghi_PUF.xpr
+launch_simulation -simset [get_filesets enmapper_ECC_dut ] -mode post-implementation -type timing
+source tb_enmapper_ECC.tcl
+update_compile_order -fileset sources_1
+save_wave_config {C:/Users/Simone/Desktop/finale/TacconiAsnaghi_PUF/tb_enmapper_ECC_time_impl.wcfg}
+add_files -fileset enmapper_ECC_dut -norecurse C:/Users/Simone/Desktop/finale/TacconiAsnaghi_PUF/tb_enmapper_ECC_time_impl.wcfg
+set_property xsim.view C:/Users/Simone/Desktop/finale/TacconiAsnaghi_PUF/tb_enmapper_ECC_time_impl.wcfg [get_filesets enmapper_ECC_dut]
+close_sim
+current_fileset -simset [ get_filesets IBS_dut ]
+launch_simulation -simset [get_filesets IBS_dut ] -mode post-implementation -type timing
+source tb_IBS.tcl
+save_wave_config {C:/Users/Simone/Desktop/finale/TacconiAsnaghi_PUF/tb_IBS_time_impl.wcfg}
+close_sim
+current_fileset -simset [ get_filesets controller_ECC_dut ]
+launch_simulation -simset [get_filesets controller_ECC_dut ] -mode post-implementation -type timing
+source tb_controller_ECC.tcl
+save_wave_config {C:/Users/Simone/Desktop/finale/TacconiAsnaghi_PUF/tb_controller_ECC_time_impl.wcfg}
+close_sim
+current_fileset -simset [ get_filesets Arbiter_PUF_dut ]
+launch_simulation -simset [get_filesets Arbiter_PUF_dut ] -mode post-implementation -type timing
+source tb_Arbiter_PUF.tcl
+save_wave_config {C:/Users/Simone/Desktop/finale/TacconiAsnaghi_PUF/tb_Arbiter_PUF_time_impl.wcfg}
+close_sim
+archive_project C:/Users/Simone/Desktop/finale/TacconiAsnaghi_PUF.xpr.zip -temp_dir C:/Users/Simone/Desktop/finale/TacconiAsnaghi_PUF/.Xil/Vivado-8896-DESKTOP-UV9HJ0O -force -include_local_ip_cache

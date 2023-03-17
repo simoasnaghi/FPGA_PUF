@@ -1,0 +1,47 @@
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto 19a02e536efc4fd8a4c4e73bf0195af8 --incr --debug typical --relax --mt 2 --maxdelay -L xil_defaultlib -L simprims_ver -L secureip --snapshot tb_Arbiter_PUF_time_impl -transport_int_delays -pulse_r 0 -pulse_int_r 0 -pulse_e 0 -pulse_int_e 0 xil_defaultlib.tb_Arbiter_PUF xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+INFO: [XSIM 43-3451] SDF backannotation process started with SDF file "tb_Arbiter_PUF_time_impl.sdf", for root module "tb_Arbiter_PUF/Arbiter_PUF_inst".
+INFO: [XSIM 43-3452] SDF backannotation was successful for SDF file "tb_Arbiter_PUF_time_impl.sdf", for root module "tb_Arbiter_PUF/Arbiter_PUF_inst".
+Time Resolution for simulation is 1ps
+Compiling module simprims_ver.x_lut2_mux4
+Compiling module simprims_ver.LUT2
+Compiling module simprims_ver.FDRE_default
+Compiling module xil_defaultlib.enmapper_ECC
+Compiling module simprims_ver.LUT4(INIT=16'b1100111111001010)
+Compiling module simprims_ver.x_lut1_mux2
+Compiling module simprims_ver.LUT1(INIT=2'b01)
+Compiling module xil_defaultlib.IBS_Standalone
+Compiling module simprims_ver.IBUF
+Compiling module simprims_ver.BUFG
+Compiling module simprims_ver.OBUF
+Compiling module simprims_ver.FDSE_default
+Compiling module xil_defaultlib.arbiter
+Compiling module simprims_ver.x_lut3_mux8
+Compiling module simprims_ver.LUT3
+Compiling module xil_defaultlib.singlebitAPUF
+Compiling module xil_defaultlib.arbiter_0
+Compiling module xil_defaultlib.singlebitAPUF_1
+Compiling module xil_defaultlib.arbiter_2
+Compiling module xil_defaultlib.singlebitAPUF_3
+Compiling module xil_defaultlib.arbiter_4
+Compiling module xil_defaultlib.singlebitAPUF_5
+Compiling module xil_defaultlib.arbiter_6
+Compiling module xil_defaultlib.singlebitAPUF_7
+Compiling module xil_defaultlib.arbiter_8
+Compiling module xil_defaultlib.singlebitAPUF_9
+Compiling module xil_defaultlib.arbiter_10
+Compiling module xil_defaultlib.singlebitAPUF_11
+Compiling module xil_defaultlib.arbiter_12
+Compiling module xil_defaultlib.singlebitAPUF_13
+Compiling module xil_defaultlib.starter
+Compiling module xil_defaultlib.Arbiter_PUF
+Compiling module xil_defaultlib.tb_Arbiter_PUF
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_Arbiter_PUF_time_impl

@@ -1,0 +1,15 @@
+#-----------------------------------------------------------
+# Webtalk v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Wed Feb  9 00:17:17 2022
+# Process ID: 11616
+# Current directory: C:/Users/Simone/Desktop/finale/TacconiAsnaghi_PUF/TacconiAsnaghi_PUF.sim/Arbiter_PUF_dut/impl/timing/xsim
+# Command line: wbtcv.exe -mode batch -source C:/Users/Simone/Desktop/finale/TacconiAsnaghi_PUF/TacconiAsnaghi_PUF.sim/Arbiter_PUF_dut/impl/timing/xsim/xsim.dir/tb_Arbiter_PUF_time_impl/webtalk/xsim_webtalk.tcl -notrace
+# Log file: C:/Users/Simone/Desktop/finale/TacconiAsnaghi_PUF/TacconiAsnaghi_PUF.sim/Arbiter_PUF_dut/impl/timing/xsim/webtalk.log
+# Journal file: C:/Users/Simone/Desktop/finale/TacconiAsnaghi_PUF/TacconiAsnaghi_PUF.sim/Arbiter_PUF_dut/impl/timing/xsim\webtalk.jou
+#-----------------------------------------------------------
+source C:/Users/Simone/Desktop/finale/TacconiAsnaghi_PUF/TacconiAsnaghi_PUF.sim/Arbiter_PUF_dut/impl/timing/xsim/xsim.dir/tb_Arbiter_PUF_time_impl/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-186] 'C:/Users/Simone/Desktop/finale/TacconiAsnaghi_PUF/TacconiAsnaghi_PUF.sim/Arbiter_PUF_dut/impl/timing/xsim/xsim.dir/tb_Arbiter_PUF_time_impl/webtalk/usage_statistics_ext_xsim.xml' has been successfully sent to Xilinx on Wed Feb  9 00:17:23 2022. For additional details about this file, please refer to the WebTalk help file at C:/Xilinx/Vivado/2020.2/doc/webtalk_introduction.html.
+webtalk_transmit: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 116.414 ; gain = 23.184
+INFO: [Common 17-206] Exiting Webtalk at Wed Feb  9 00:17:23 2022...

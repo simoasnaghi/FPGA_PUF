@@ -1,0 +1,10 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"tb_1bit_APUF_time_impl.v" \
+"../../../../../TacconiAsnaghi_PUF.srcs/sources_1/new/arbiter.v" \
+"../../../../../TacconiAsnaghi_PUF.srcs/sources_1/new/singlebitAPUF.v" \
+"../../../../../TacconiAsnaghi_PUF.srcs/sources_1/new/starter.v" \
+"../../../../../TacconiAsnaghi_PUF.srcs/1bit_APUF_dut/new/tb_1bit_APUF.v" \
+
+# Do not sort compile order
+nosort

@@ -1,0 +1,7 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"tb_Arbiter_PUF_time_impl.v" \
+"../../../../../TacconiAsnaghi_PUF.srcs/Arbiter_PUF_dut/new/tb_Arbiter_PUF.v" \
+
+# Do not sort compile order
+nosort

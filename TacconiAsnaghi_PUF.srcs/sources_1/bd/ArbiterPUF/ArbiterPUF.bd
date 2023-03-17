@@ -1,0 +1,230 @@
+{
+    "design": {
+        "design_info": {
+            "boundary_crc": "0xA680620F9A641341",
+            "device": "xc7a35tcpg236-1",
+            "gen_directory": "../../../../TacconiAsnaghi_PUF.gen/sources_1/bd/ArbiterPUF",
+            "name": "ArbiterPUF",
+            "rev_ctrl_bd_flag": "RevCtrlBdOff",
+            "synth_flow_mode": "Hierarchical",
+            "tool_version": "2020.2",
+            "validated": "true"
+        },
+        "design_tree": {
+            "clk_wiz_0": "",
+            "Arbiter_PUF_0": "",
+            "proc_sys_reset_0": ""
+        },
+        "ports": {
+            "sys_clock": {
+                "type": "clk",
+                "direction": "I",
+                "parameters": {
+                    "CLK_DOMAIN": {
+                        "value": "ArbiterPUF_sys_clock",
+                        "value_src": "default"
+                    },
+                    "FREQ_HZ": {
+                        "value": "100000000"
+                    },
+                    "FREQ_TOLERANCE_HZ": {
+                        "value": "0",
+                        "value_src": "default"
+                    },
+                    "INSERT_VIP": {
+                        "value": "0",
+                        "value_src": "default"
+                    },
+                    "PHASE": {
+                        "value": "0.000"
+                    }
+                }
+            },
+            "reset": {
+                "type": "rst",
+                "direction": "I",
+                "parameters": {
+                    "INSERT_VIP": {
+                        "value": "0",
+                        "value_src": "default"
+                    },
+                    "POLARITY": {
+                        "value": "ACTIVE_HIGH"
+                    }
+                }
+            },
+            "start_in_0": {
+                "direction": "I"
+            },
+            "challenge_in_0": {
+                "direction": "I",
+                "left": "15",
+                "right": "0"
+            },
+            "response_out_0": {
+                "direction": "O",
+                "left": "7",
+                "right": "0"
+            },
+            "control_out_0": {
+                "direction": "O"
+            },
+            "valid_out_0": {
+                "direction": "O"
+            }
+        },
+        "components": {
+            "clk_wiz_0": {
+                "vlnv": "xilinx.com:ip:clk_wiz:6.0",
+                "xci_name": "ArbiterPUF_clk_wiz_0_0",
+                "xci_path": "ip\\ArbiterPUF_clk_wiz_0_0\\ArbiterPUF_clk_wiz_0_0.xci",
+                "inst_hier_path": "clk_wiz_0",
+                "parameters": {
+                    "CLK_IN1_BOARD_INTERFACE": {
+                        "value": "sys_clock"
+                    },
+                    "RESET_BOARD_INTERFACE": {
+                        "value": "reset"
+                    },
+                    "USE_BOARD_FLOW": {
+                        "value": "true"
+                    }
+                }
+            },
+            "Arbiter_PUF_0": {
+                "vlnv": "xilinx.com:module_ref:Arbiter_PUF:1.0",
+                "xci_name": "ArbiterPUF_Arbiter_PUF_0_0",
+                "xci_path": "ip\\ArbiterPUF_Arbiter_PUF_0_0\\ArbiterPUF_Arbiter_PUF_0_0.xci",
+                "inst_hier_path": "Arbiter_PUF_0",
+                "reference_info": {
+                    "ref_type": "hdl",
+                    "ref_name": "Arbiter_PUF",
+                    "boundary_crc": "0x0"
+                },
+                "ports": {
+                    "clk": {
+                        "type": "clk",
+                        "direction": "I",
+                        "parameters": {
+                            "ASSOCIATED_RESET": {
+                                "value": "reset",
+                                "value_src": "constant"
+                            },
+                            "FREQ_HZ": {
+                                "value": "100000000",
+                                "value_src": "ip_prop"
+                            },
+                            "PHASE": {
+                                "value": "0.0",
+                                "value_src": "ip_prop"
+                            },
+                            "CLK_DOMAIN": {
+                                "value": "/clk_wiz_0_clk_out1",
+                                "value_src": "ip_prop"
+                            }
+                        }
+                    },
+                    "reset": {
+                        "type": "rst",
+                        "direction": "I",
+                        "parameters": {
+                            "POLARITY": {
+                                "value": "ACTIVE_HIGH",
+                                "value_src": "const_prop"
+                            }
+                        }
+                    },
+                    "start_in": {
+                        "direction": "I"
+                    },
+                    "challenge_in": {
+                        "direction": "I",
+                        "left": "15",
+                        "right": "0"
+                    },
+                    "response_out": {
+                        "direction": "O",
+                        "left": "7",
+                        "right": "0"
+                    },
+                    "control_out": {
+                        "direction": "O"
+                    },
+                    "valid_out": {
+                        "direction": "O"
+                    }
+                }
+            },
+            "proc_sys_reset_0": {
+                "vlnv": "xilinx.com:ip:proc_sys_reset:5.0",
+                "xci_name": "ArbiterPUF_proc_sys_reset_0_0",
+                "xci_path": "ip\\ArbiterPUF_proc_sys_reset_0_0\\ArbiterPUF_proc_sys_reset_0_0.xci",
+                "inst_hier_path": "proc_sys_reset_0"
+            }
+        },
+        "nets": {
+            "sys_clock_1": {
+                "ports": [
+                    "sys_clock",
+                    "clk_wiz_0/clk_in1"
+                ]
+            },
+            "clk_wiz_0_clk_out1": {
+                "ports": [
+                    "clk_wiz_0/clk_out1",
+                    "Arbiter_PUF_0/clk",
+                    "proc_sys_reset_0/slowest_sync_clk"
+                ]
+            },
+            "Net": {
+                "ports": [
+                    "reset",
+                    "proc_sys_reset_0/ext_reset_in",
+                    "clk_wiz_0/reset"
+                ]
+            },
+            "clk_wiz_0_locked": {
+                "ports": [
+                    "clk_wiz_0/locked",
+                    "proc_sys_reset_0/dcm_locked"
+                ]
+            },
+            "proc_sys_reset_0_peripheral_reset": {
+                "ports": [
+                    "proc_sys_reset_0/peripheral_reset",
+                    "Arbiter_PUF_0/reset"
+                ]
+            },
+            "start_in_0_1": {
+                "ports": [
+                    "start_in_0",
+                    "Arbiter_PUF_0/start_in"
+                ]
+            },
+            "challenge_in_0_1": {
+                "ports": [
+                    "challenge_in_0",
+                    "Arbiter_PUF_0/challenge_in"
+                ]
+            },
+            "Arbiter_PUF_0_response_out": {
+                "ports": [
+                    "Arbiter_PUF_0/response_out",
+                    "response_out_0"
+                ]
+            },
+            "Arbiter_PUF_0_control_out": {
+                "ports": [
+                    "Arbiter_PUF_0/control_out",
+                    "control_out_0"
+                ]
+            },
+            "Arbiter_PUF_0_valid_out": {
+                "ports": [
+                    "Arbiter_PUF_0/valid_out",
+                    "valid_out_0"
+                ]
+            }
+        }
+    }
+}

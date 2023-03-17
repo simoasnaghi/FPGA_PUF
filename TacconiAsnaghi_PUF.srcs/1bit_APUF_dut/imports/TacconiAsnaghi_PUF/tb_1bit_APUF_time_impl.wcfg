@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="tb_1bit_APUF_time_impl.wdb" id="1">
+         <top_modules>
+            <top_module name="glbl" />
+            <top_module name="tb_1bit_APUF" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="999994fs"></ZoomStartTime>
+      <ZoomEndTime time="1000005fs"></ZoomEndTime>
+      <Cursor1Time time="1000000fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="189"></NameColumnWidth>
+      <ValueColumnWidth column_width="75"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="3" />
+   <wvobject fp_name="group8" type="group">
+      <obj_property name="label">1_bit_APUF</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+      <wvobject fp_name="/tb_1bit_APUF/clk_tb" type="logic">
+         <obj_property name="ElementShortName">clk_tb</obj_property>
+         <obj_property name="ObjectShortName">clk_tb</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_1bit_APUF/reset_tb" type="logic">
+         <obj_property name="ElementShortName">reset_tb</obj_property>
+         <obj_property name="ObjectShortName">reset_tb</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_1bit_APUF/start_tb" type="logic">
+         <obj_property name="ElementShortName">start_tb</obj_property>
+         <obj_property name="ObjectShortName">start_tb</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_1bit_APUF/challenge_tb" type="array">
+         <obj_property name="ElementShortName">challenge_tb[15:0]</obj_property>
+         <obj_property name="ObjectShortName">challenge_tb[15:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_1bit_APUF/response_tb" type="array">
+         <obj_property name="ElementShortName">response_tb[7:0]</obj_property>
+         <obj_property name="ObjectShortName">response_tb[7:0]</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group11" type="group">
+      <obj_property name="label">single_bit_APUF</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+      <wvobject fp_name="/tb_1bit_APUF/starter_DUT/\SINGLE_APUF_GENERATOR[0].singlebitAPUF_inst /mux_out_up" type="array">
+         <obj_property name="ElementShortName">mux_out_up[14:0]</obj_property>
+         <obj_property name="ObjectShortName">mux_out_up[14:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_1bit_APUF/starter_DUT/\SINGLE_APUF_GENERATOR[0].singlebitAPUF_inst /mux_out_down" type="array">
+         <obj_property name="ElementShortName">mux_out_down[14:0]</obj_property>
+         <obj_property name="ObjectShortName">mux_out_down[14:0]</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group16" type="group">
+      <obj_property name="label">arbiter</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+      <wvobject fp_name="/tb_1bit_APUF/starter_DUT/\SINGLE_APUF_GENERATOR[0].arbiter_inst /d_ff_in" type="logic">
+         <obj_property name="ElementShortName">d_ff_in</obj_property>
+         <obj_property name="ObjectShortName">d_ff_in</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_1bit_APUF/starter_DUT/\SINGLE_APUF_GENERATOR[0].arbiter_inst /ck_ff_in" type="logic">
+         <obj_property name="ElementShortName">ck_ff_in</obj_property>
+         <obj_property name="ObjectShortName">ck_ff_in</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_1bit_APUF/starter_DUT/\SINGLE_APUF_GENERATOR[0].arbiter_inst /response_out" type="logic">
+         <obj_property name="ElementShortName">response_out</obj_property>
+         <obj_property name="ObjectShortName">response_out</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_1bit_APUF/starter_DUT/\SINGLE_APUF_GENERATOR[0].arbiter_inst /response_internal" type="logic">
+         <obj_property name="ElementShortName">response_internal</obj_property>
+         <obj_property name="ObjectShortName">response_internal</obj_property>
+      </wvobject>
+   </wvobject>
+</wave_config>

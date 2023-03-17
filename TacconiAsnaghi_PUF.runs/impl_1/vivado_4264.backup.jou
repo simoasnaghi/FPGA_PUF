@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Tue Feb  8 23:30:03 2022
+# Process ID: 4264
+# Current directory: C:/Users/Simone/Desktop/finale/TacconiAsnaghi_PUF/TacconiAsnaghi_PUF.runs/impl_1
+# Command line: vivado.exe -log Arbiter_PUF.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source Arbiter_PUF.tcl -notrace
+# Log file: C:/Users/Simone/Desktop/finale/TacconiAsnaghi_PUF/TacconiAsnaghi_PUF.runs/impl_1/Arbiter_PUF.vdi
+# Journal file: C:/Users/Simone/Desktop/finale/TacconiAsnaghi_PUF/TacconiAsnaghi_PUF.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source Arbiter_PUF.tcl -notrace

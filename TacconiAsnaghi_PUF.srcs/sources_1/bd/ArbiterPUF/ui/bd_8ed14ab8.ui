@@ -1,0 +1,34 @@
+{
+   "ActiveEmotionalView":"Default View",
+   "Default View_ScaleFactor":"0.93135",
+   "Default View_TopLeft":"-291,-409",
+   "ExpandedHierarchyInLayout":"",
+   "guistr":"# # String gsaved with Nlview 7.0r6  2020-01-29 bk=1.5227 VDI=41 GEI=36 GUI=JA:10.0 non-TLS
+#  -string -flagsOSRD
+preplace port sys_clock -pg 1 -lvl 0 -x -110 -y -120 -defaultsOSRD
+preplace port reset -pg 1 -lvl 0 -x -110 -y -140 -defaultsOSRD
+preplace port start_in_0 -pg 1 -lvl 0 -x -110 -y -20 -defaultsOSRD
+preplace port control_out_0 -pg 1 -lvl 4 -x 840 -y -30 -defaultsOSRD
+preplace port valid_out_0 -pg 1 -lvl 4 -x 840 -y -10 -defaultsOSRD
+preplace portBus challenge_in_0 -pg 1 -lvl 0 -x -110 -y 0 -defaultsOSRD
+preplace portBus response_out_0 -pg 1 -lvl 4 -x 840 -y -50 -defaultsOSRD
+preplace inst clk_wiz_0 -pg 1 -lvl 2 -x 390 -y -130 -defaultsOSRD
+preplace inst Arbiter_PUF_0 -pg 1 -lvl 3 -x 660 -y -30 -defaultsOSRD
+preplace inst proc_sys_reset_0 -pg 1 -lvl 1 -x 100 -y -230 -defaultsOSRD
+preplace netloc sys_clock_1 1 0 2 -90J -100 300
+preplace netloc clk_wiz_0_clk_out1 1 0 3 -80 -120 270 -210 490
+preplace netloc Net 1 0 2 -90 -130 280
+preplace netloc clk_wiz_0_locked 1 0 3 -70 -110 290J -200 480
+preplace netloc proc_sys_reset_0_peripheral_reset 1 1 2 NJ -230 500
+preplace netloc start_in_0_1 1 0 3 NJ -20 NJ -20 NJ
+preplace netloc challenge_in_0_1 1 0 3 NJ 0 NJ 0 NJ
+preplace netloc Arbiter_PUF_0_response_out 1 3 1 N -50
+preplace netloc Arbiter_PUF_0_control_out 1 3 1 N -30
+preplace netloc Arbiter_PUF_0_valid_out 1 3 1 N -10
+levelinfo -pg 1 -110 100 390 660 840
+pagesize -pg 1 -db -bbox -sgen -300 -330 1020 140
+"
+}
+{
+   "da_board_cnt":"2"
+}

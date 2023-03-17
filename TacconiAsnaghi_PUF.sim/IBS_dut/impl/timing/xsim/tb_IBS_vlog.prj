@@ -1,0 +1,11 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"tb_IBS_time_impl.v" \
+"../../../../../TacconiAsnaghi_PUF.srcs/sources_1/new/IBS_Standalone.v" \
+"../../../../../TacconiAsnaghi_PUF.srcs/sources_1/new/controller_ECC.v" \
+"../../../../../TacconiAsnaghi_PUF.srcs/sources_1/new/demapper_ECC.v" \
+"../../../../../TacconiAsnaghi_PUF.srcs/sources_1/new/enmapper_ECC.v" \
+"../../../../../TacconiAsnaghi_PUF.srcs/IBS_dut/new/tb_IBS.v" \
+
+# Do not sort compile order
+nosort
